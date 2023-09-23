@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Tête de la page qui contient les metadonnées -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Bonneteau</title>
+    <!--Feuille de style-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+
+</head>
+
+<html>
+    <div class="container">
+        <h1 class="titre">Jeux Bonneteau </h1>
+
+        <h1 class="slogan">Les cartes noires perdent et la carte rouge gagne</h1>
+
+        <h4>Veuillez tirer une carte !!! </h4>
+
+
+
+        <!-- TOUTES LES CARTES-->
+        <div class="cards">
+            <div class="card" onclick="flip(event)">
+                <!--Image de la carte rouge-->
+                <div class="front">
+                    <img id="imgUn" class="card-img" src="images/black.png" alt="carte de dame">
+                </div>
+                <div class="back">
+                </div>
+            </div>
+            <div class="card" onclick="flip(event)">
+                <!--Image de la carte rouge-->
+                <div class="front">
+                    <img id="imgDeux" class="card-img" src="images/black.png" alt="carte de dame ">
+                </div>
+                <div class="back">
+                </div>
+            </div>
+            <div class="card" onclick="flip(event)">
+                <!--Image de la carte rouge-->
+                <div class="front">
+                    <img id="imgTrois" class="card-img" src="images/black.png" alt="carte de dame ">
+                </div>
+                <div class="back">
+                </div>
+            </div>
+
+        </div>
+
+        <button id="idbtn" class="play" onclick="play()">PLAY</button>
+<label class="score" >Score :  <span id="score"> 0</span></label>
+
+    </div>
+    
+    
+</body>
+
+<!--script-->
+<script src="js/script.js"></script>
+
+</html>
